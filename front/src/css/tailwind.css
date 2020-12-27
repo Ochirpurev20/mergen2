@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=Oswald:wght@500&display=swap");
+
+:root {
+  --primaryGreen: #22422d;
+  --lightGreen: #588326;
+  --primaryGray: #f4f4f4;
+  --primaryYellow: #f1e773;
+  --primaryBrown: #442200;
+}
+#showcase {
+  background: #333 url("../src/img/mongol-design1.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+}
+.my-bg-uusalt {
+  background: rgba(0, 0, 0, 0.6);
+}
+.my-bg-prime {
+  background-color: #588326;
+}
+.my-bg-light {
+  background-color: var(--primaryGray);
+}
+.my-bg-brown {
+  background-color: var(--primaryBrown);
+}
+.my-color-prime {
+  color: #588326;
+}
+.my-logo-animation {
+  animation: logo-clarify 1.3s forwards ease-out;
+}
+@keyframes logo-clarify {
+  from {
+    background: rgba(220, 220, 220, 0.1);
+  }
+  to {
+    background: rgba(220, 220, 220, 0.7);
+  }
+}
+#wedid {
+  background: var(--primaryBrown);
+  color: var(--primaryGray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#wedid h2 {
+  margin: 2rem;
+}
+.slideshow {
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 100%;
+}
+.text {
+  color: #fff;
+  padding: 8px 12px;
+  bottom: 10px;
+  position: absolute;
+  text-align: center;
+}
+.numberText {
+  color: #fff;
+  padding: 8px 12px;
+  top: 5px;
+  text-align: center;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -moz-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slide-btn {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(88, 131, 38, 0.4);
+  border: none;
+  border-radius: 5px;
+}
+.slide-btn:hover {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(88, 131, 38, 0.8);
+}
+
+.ugalz-font {
+  font-family: "Alegreya", serif;
+}
+
+.tsegt-font {
+  font-family: "Alegreya", serif;
+  font-family: "Oswald", sans-serif;
+}
